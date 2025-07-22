@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import './Banner.css';
 import logo from '../assets/logo.png';
@@ -6,17 +7,19 @@ import banner2 from '../assets/banner2.jpeg';
 
 import { FiPhoneCall, FiMenu, FiX } from 'react-icons/fi';
 
-const banners = [
+// Fallback image URL in case local images fail to load
+const fallbackImage = 'https://via.placeholder.com/1920x1080?text=Travel+Banner';
 
+const banners = [
   {
-    image: banner2,
-    tagline: 'Adventure Awaits You',
-    headline: 'Unforgettable Journeys Crafted \n For Your Wanderlust',
+    image: banner1 || fallbackImage,
+    tagline: 'Embark on Epic Adventures',
+    headline: 'Curated Trips Spark \n Your Sense of Wonder',
   },
   {
-    image: banner1, // Reusing banner1 for consistency; can be updated if a new image is provided
-    tagline: 'Ignite Your Travel Dreams',
-    headline: 'Epic Escapes Designed \n To Inspire Your Soul',
+    image: banner2 || fallbackImage,
+    tagline: 'Chase Your Wanderlust',
+    headline: 'Dream Destinations Await \n Your Next Journey',
   },
 ];
 
@@ -52,7 +55,7 @@ const Banner = () => {
   return (
     <section
       className="hero-banner"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${image || fallbackImage})` }}
     >
       <header className="header">
         <div className="logo-section">
