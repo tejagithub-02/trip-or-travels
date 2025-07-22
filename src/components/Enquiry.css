@@ -1,0 +1,167 @@
+/* === Container === */
+.inquiry-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 3.5rem auto 0;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 1.75rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+  }
+  
+  /* === Header Section === */
+  .inquiry-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  @media (min-width: 768px) {
+    .inquiry-header {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .inquiry-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0f3c45;
+  }
+  
+  /* === Tabs === */
+  .tab-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    background-color: #0f3c45;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tab-button:hover:not(.active) {
+    background-color: #f3f3f3;
+  }
+  
+  /* === Form Section === */
+  .inquiry-form {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: end;
+  }
+  
+  @media (min-width: 768px) {
+    .inquiry-form {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  /* === Form Group === */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-group label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    font-size: 1.05rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid #ccc;
+    background-color: #f9fafb;
+    color: #333;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.3);
+  }
+  
+  /* === Search Button === */
+  .form-group.search-button button {
+    font-size: 1.15rem;
+    width: 100%;
+    padding: 0.8rem 1.25rem;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: #0f3c45;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 14px rgba(15, 60, 69, 0.2);
+    transition: background-color 0.2s ease;
+  }
+  
+  .form-group.search-button button:hover {
+    background-color: #0d2e36;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /* === Responsive Tweaks for Small Screens === */
+  @media (max-width: 767px) {
+    .inquiry-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  
+    .form-group.search-button {
+      grid-column: span 1;
+    }
+  
+    .inquiry-container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .inquiry-title {
+      font-size: 1.75rem;
+    }
+  
+    .tab-button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  

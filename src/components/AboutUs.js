@@ -13,7 +13,7 @@ const cards = [
   {
     title: 'Cultural Tours',
     text: 'Immerse yourself in vibrant traditions with our expert-guided cultural expeditions across India.',
-    images: [img1a, img1b],
+    images: [img2a, img1b],
     stats: [
       { value: '50+', label: 'Heritage Sites' },
       { value: '12', label: 'Cultural Zones' },
@@ -22,9 +22,9 @@ const cards = [
     accent: '#EF4444' // red
   },
   {
-    title: 'Adventure Getaways',
+    title: 'Adventure Gateways',
     text: 'From Himalayan treks to coastal dives, challenge yourself with thrilling escapades.',
-    images: [img2a, img2b],
+    images: [img2b, img1a],
     stats: [
       { value: '100+', label: 'Adventure Spots' },
       { value: '5', label: 'Difficulty Levels' },

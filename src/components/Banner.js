@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Banner.css';
 import logo from '../assets/logo.png';
-import banner1 from '../assets/banner1.jpeg';
-import banner2 from '../assets/banner3.jpg';
+import banner1 from '../assets/banner3.jpg';
+import banner2 from '../assets/banner2.jpeg';
 
 import { FiPhoneCall, FiMenu, FiX } from 'react-icons/fi';
 
 const banners = [
-  {
-    image: banner1,
-    tagline: 'Explore the World With Confidence',
-    headline: 'Handpicked Holiday Packages \n Tailored Just for You',
-  },
+
   {
     image: banner2,
-    tagline: 'Your Journey Begins Here',
-    headline: 'Discover Breathtaking Destinations \n With Trusted Partners',
+    tagline: 'Adventure Awaits You',
+    headline: 'Unforgettable Journeys Crafted \n For Your Wanderlust',
+  },
+  {
+    image: banner1, // Reusing banner1 for consistency; can be updated if a new image is provided
+    tagline: 'Ignite Your Travel Dreams',
+    headline: 'Epic Escapes Designed \n To Inspire Your Soul',
   },
 ];
 
@@ -79,7 +80,11 @@ const Banner = () => {
         </div>
       </header>
 
-      <div className="hero-text animate-slide-up">
+      <div
+        className={`hero-text animate-slide-up ${
+          currentImageIndex === 1 ? 'right-align' : 'left-align'
+        }`}
+      >
         <p className="tagline animate-fade-in">{tagline}</p>
         <h1>{headline}</h1>
       </div>
