@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import Enquiry from './components/Enquiry';
 import AboutUs from './components/AboutUs';
 import Destinations from './components/Destinations';
+import TravelExperience from './components/TravelExperience';
 
 
 function App()
@@ -17,6 +18,7 @@ function App()
    <Enquiry/>
     <AboutUs/>
     <Destinations/>
+    <TravelExperience/>
     </>
   );
 }

@@ -1,0 +1,144 @@
+.travel-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #e8f7fb, #fff3f7);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .travel-left {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2rem;
+    z-index: 2;
+  }
+  
+  .travel-left h5 {
+    color: #03a9f4;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .travel-left h1 {
+    font-size: 2.6rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .travel-desc {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+  
+  .travel-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .travel-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  
+  .circle-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle-line span {
+    background-color: #03a9f4;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .circle-line .line {
+    width: 2px;
+    height: 60px;
+    background-color: #03a9f4;
+    margin-top: 4px;
+  }
+  
+  .step-text h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #212121;
+    font-weight: 600;
+  }
+  
+  .step-text p {
+    margin: 0.4rem 0 0;
+    color: #616161;
+    font-size: 0.95rem;
+  }
+  
+  .travel-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    margin-top: 2rem;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    z-index: 3;
+  }
+  
+  .shape-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background: #03a9f4;
+    border-top-left-radius: 100%;
+    z-index: 1;
+    opacity: 0.2;
+  }
+  
+  .plane {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 2rem;
+    z-index: 4;
+  }
+  
+  @media (max-width: 768px) {
+    .travel-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .travel-left {
+      padding-right: 0;
+    }
+  
+    .travel-right {
+      margin-top: 3rem;
+    }
+  
+    .circle-line .line {
+      height: 40px;
+    }
+  }
+  
