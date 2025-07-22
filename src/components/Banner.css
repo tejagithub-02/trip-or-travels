@@ -1,0 +1,210 @@
+/* === HERO BANNER === */
+.hero-banner {
+  width: 90%;
+  height: 95vh;
+  margin: auto;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 20px 4%;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* === HEADER STYLES === */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 5%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 0;
+}
+
+/* === LOGO === */
+.logo {
+  width: 120px;
+}
+
+/* === NAV MENU === */
+.nav-menu {
+  display: flex;
+  gap: 35px;
+  margin-right:-100px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ffd700;
+}
+
+/* === INQUIRY BOX === */
+.inquiry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.phone-icon {
+  font-size: 20px;
+}
+
+/* === MOBILE MENU TOGGLE === */
+.menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* === HERO TEXT === */
+.hero-text {
+  color: #fff;
+  padding-bottom: 80px;
+  text-align: left;
+  max-width: 700px;
+  z-index: 2;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero-text .tagline {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  white-space: pre-line;
+  animation: slideUp 1.5s ease;
+  line-height: 1.3;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 1.5s ease forwards;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 1024px) {
+  .hero-banner {
+    width: 94%;
+    padding: 0 3%;
+  }
+
+  .hero-text {
+    padding-bottom: 60px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 998;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .inquiry {
+    display: none;
+  }
+
+  .nav-menu a {
+    color: #6b4eff;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text .tagline {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .hero-banner {
+    margin-top: 0;
+  }
+}

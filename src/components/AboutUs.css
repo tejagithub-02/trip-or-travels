@@ -1,0 +1,260 @@
+/* === COLOR VARIABLES === */
+:root {
+    --white: #FFFFFF;
+    --black: #111827;
+    --red: #EF4444;
+    --blue: #3B82F6;
+    --gray-light: #F3F4F6;
+    --gray-dark: #6B7280;
+  }
+  
+  /* === BASE STYLES === */
+  .about-section {
+    padding: 100px 20px;
+    background: var(--white);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
+  
+  .title-underline {
+    height: 4px;
+    background: var(--red);
+    width: 100px;
+    margin: 0 auto 20px;
+    transform-origin: left;
+  }
+  
+  .section-subtitle {
+    font-size: 1.3rem;
+    color: var(--black);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  
+  .red-text {
+    color: var(--red);
+    font-weight: 600;
+  }
+  
+  .blue-text {
+    color: var(--blue);
+    font-weight: 600;
+  }
+  
+  /* === CARDS CONTAINER === */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  
+  /* === CARD STYLES === */
+  .about-card {
+    width: 360px;
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-accent-bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: filter 0.3s ease;
+  }
+  
+  .card-content {
+    padding: 25px;
+    text-align: left;
+    background: var(--white);
+  }
+  
+  .card-title {
+    font-size: 1.6rem;
+    margin: 0 0 15px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  .card-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  /* === STATS STYLES === */
+  .card-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 12px;
+  }
+  
+  .stat-item {
+    background: var(--white);
+    padding: 15px 10px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* === MISSION STATEMENT === */
+  .mission-statement {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--black);
+    border-radius: 16px;
+    color: var(--white);
+  }
+  
+  .mission-statement h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .mission-statement p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+  
+  /* === PULSING ANIMATION === */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .pulse-animation {
+    animation: pulse 3s infinite;
+  }
+  
+  /* === RESPONSIVE STYLES === */
+  @media (max-width: 1024px) {
+    .about-card {
+      width: 320px;
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 80px 20px;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .cards-container {
+      gap: 30px;
+    }
+    
+    .about-card {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .mission-statement {
+      padding: 30px;
+    }
+    
+    .mission-statement h3 {
+      font-size: 1.6rem;
+    }
+    
+    .mission-statement p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-section {
+      padding: 60px 15px;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .card-stats {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .mission-statement {
+      padding: 25px 20px;
+    }
+    
+    .mission-statement h3 {
+      font-size: 1.4rem;
+    }
+    
+    .mission-statement p {
+      font-size: 1rem;
+    }
+  }
