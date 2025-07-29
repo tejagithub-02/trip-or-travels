@@ -6,6 +6,10 @@ import Enquiry from './components/Enquiry';
 import AboutUs from './components/AboutUs';
 import Destinations from './components/Destinations';
 import TravelExperience from './components/TravelExperience';
+import FeaturedTour from './components/FeaturedTour';
+import Testimonial from './components/Testimonial';
+import Insta from './components/Insta';
+
 
 
 function App()
@@ -19,6 +23,9 @@ function App()
     <AboutUs/>
     <Destinations/>
     <TravelExperience/>
+    <FeaturedTour/>
+    <Testimonial/>
+    <Insta/>
     </>
   );
 }

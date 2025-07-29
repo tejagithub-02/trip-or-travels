@@ -74,7 +74,7 @@ const Banner = () => {
           <FiPhoneCall className="phone-icon" />
           <div className="inquiry-text">
             <span>To More Inquiry</span>
-            <strong>+91 7795183828</strong>
+            <strong>+91 6363298478</strong>
           </div>
         </div>
 

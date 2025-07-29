@@ -1,0 +1,111 @@
+.instagram-section {
+  position: relative;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  text-align: center;
+  overflow: hidden;
+}
+
+.pattern-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/bg-pattern.png');
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.instagram-title {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.instagram-gallery {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    z-index: 1;
+    scrollbar-width: none; /* Firefox */
+  }
+  .instagram-gallery::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+/* Autoscroll only on small screens */
+@media (max-width: 767px) {
+    .instagram-gallery {
+      animation: scrollGallery 20s linear infinite;
+    }
+  
+    @keyframes scrollGallery {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+.instagram-image-wrapper {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex: 0 0 auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); 
+}
+
+.instagram-image-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.instagram-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.6); /* increased opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.instagram-image-wrapper:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-icon {
+  width: 60px;
+  height: 60px;
+  background: url('../assets/insta-icon.png') no-repeat center center / contain;
+}
+@media (min-width: 1024px) {
+    .instagram-gallery {
+      margin-left: 80px; /* Adjust as needed */
+    }
+  }
+ 

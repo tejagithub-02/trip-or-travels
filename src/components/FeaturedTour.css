@@ -1,0 +1,139 @@
+.featured-wrapper {
+    padding: 5rem 1rem;
+    background: linear-gradient(to right, #fff, #f8fafc);
+    color: #111;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.featured-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+.featured-header h5 {
+    color: #ef4444;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.featured-header h1 {
+    font-size: 2.5rem;
+    color: #111;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.featured-header p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.featured-cards-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.featured-cards {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.featured-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.tour-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    min-width: 280px;
+    flex: 0 0 auto;
+    padding: 1.25rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tour-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ef4444;
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+
+.tour-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+    color: #111;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.animated-plane {
+    position: absolute;
+    left: -20px;
+    bottom: 20px;
+    z-index: 1;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 768px) {
+    .featured-header h1 {
+        font-size: 2rem;
+    }
+    
+    .featured-header p {
+        font-size: 0.9rem;
+    }
+    
+    .tour-card {
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-wrapper {
+        padding: 3rem 1rem;
+    }
+    
+    .featured-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tour-card {
+        min-width: 220px;
+    }
+}

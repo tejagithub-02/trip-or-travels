@@ -12,6 +12,7 @@
     min-width: 300px;
     padding-right: 2rem;
     z-index: 2;
+    
   }
   
   .travel-left h5 {
@@ -141,4 +142,8 @@
       height: 40px;
     }
   }
-  
+  @media (min-width: 1024px) {
+    .travel-left {
+      padding-left: 4rem;
+    }
+  }
