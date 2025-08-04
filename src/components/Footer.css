@@ -1,0 +1,184 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Left Column */
+.footer-left {
+  flex: 1 1 280px;
+  max-width: 320px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-left h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+.footer-left p {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Middle Column */
+.footer-middle {
+  flex: 1 1 180px;
+}
+
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+}
+
+/* Contact Column */
+.footer-contact {
+  flex: 1 1 260px;
+}
+
+.footer-contact h3 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #ffcc00;
+}
+
+.footer-contact p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #ffcc00;
+}
+
+/* Right Column */
+.footer-right {
+  flex: 1 1 280px;
+}
+
+.footer-right h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+.footer-right p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.footer-socials {
+  margin-top: 20px;
+}
+
+.footer-socials h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Brand Colors */
+.social-icons .facebook {
+  color: #1877f2;
+}
+.social-icons .instagram {
+  color: #e4405f;
+}
+.social-icons .youtube {
+  color: #ff0000;
+}
+.social-icons .whatsapp {
+  color: #25d366;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-contact,
+  .footer-right {
+    max-width: 100%;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+  }
+}

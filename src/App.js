@@ -9,6 +9,7 @@ import TravelExperience from './components/TravelExperience';
 import FeaturedTour from './components/FeaturedTour';
 import Testimonial from './components/Testimonial';
 import Insta from './components/Insta';
+import Footer from './components/Footer';
 
 
 
@@ -26,6 +27,7 @@ function App()
     <FeaturedTour/>
     <Testimonial/>
     <Insta/>
+    <Footer/>
     </>
   );
 }

@@ -10,7 +10,7 @@ const Enquiry = () => {
       <div className="inquiry-header">
         <h2 className="inquiry-title">Find The Best Place</h2>
         <div className="tab-group">
-          {['Hotels', 'Tour', 'Flight'].map((tab) => (
+          {['Hotels', 'Tour'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -31,22 +31,12 @@ const Enquiry = () => {
 
         <div className="form-group">
           <label>Price</label>
-          <select>
-            <option>Price</option>
-            <option>1000₹</option>
-            <option>1500₹</option>
-            <option>2000₹</option>
-          </select>
+          <input type="price" placeholder="Enter price" />
         </div>
 
         <div className="form-group">
           <label>Location</label>
-          <select>
-            <option>All City</option>
-            <option>Goa</option>
-            <option>Manali</option>
-            <option>Kerala</option>
-          </select>
+          <input type="location" placeholder="Enter Location" />
         </div>
 
         <div className="form-group">
