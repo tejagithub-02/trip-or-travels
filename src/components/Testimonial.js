@@ -7,7 +7,7 @@ const Testimonial = () => {
     {
       name: 'Rohit Sharma',
       role: 'Backpacker, India',
-      image: require('../assets/testimonial1.jpeg'),
+     
       rating: 4.8,
       maxRating: 5,
       text: `Exploring the mountains of Himachal with this agency was an unforgettable experience. The stay was cozy, the food delicious, and the guides were extremely helpful.`,
@@ -17,7 +17,7 @@ const Testimonial = () => {
     {
       name: 'Aarav Patel',
       role: 'Travel Blogger, Mumbai',
-      image: require('../assets/testimonial2.jpeg'),
+     
       rating: 4.9,
       maxRating: 5,
       text: `From houseboats in Kashmir to the backwaters of Kerala, every moment was curated with perfection. Smooth bookings and excellent support throughout!`,
@@ -27,7 +27,7 @@ const Testimonial = () => {
     {
       name: 'Meera Iyer',
       role: 'Adventure Seeker, Bangalore',
-      image: require('../assets/testimonial3.jpeg'),
+     
       rating: 4.7,
       maxRating: 5,
       text: `I booked a solo trip to Meghalaya and everything was just perfect — transport, safety, and accommodations. Highly recommended for women solo travelers.`,
@@ -58,7 +58,7 @@ const Testimonial = () => {
     <section className="testimonial-section">
       <div className="testimonial-container">
         <div className="testimonial-left">
-          <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+         
           <div className="testimonial-nav-mobile">
             <button onClick={prevTestimonial} className="nav-arrow">
               <FaChevronLeft />
@@ -97,14 +97,7 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="testimonial-controls">
-            <button onClick={prevTestimonial} className="arrow-btn">
-              <FaChevronLeft />
-            </button>
-            <button onClick={nextTestimonial} className="arrow-btn light">
-              <FaChevronRight />
-            </button>
-          </div>
+         
 
           <div className="testimonial-indicators">
             {testimonials.map((_, index) => (

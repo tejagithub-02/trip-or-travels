@@ -1,0 +1,171 @@
+/* === HEADER STYLES === */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 14px 5%;
+    transition: all 0.3s ease;
+    z-index: 999;
+    position: relative;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* === LOGO === */
+  .logo {
+    width: 130px;
+    height: auto;
+  }
+  
+  /* === NAV MENU (DESKTOP) === */
+  .nav-menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #222;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff9d00;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #ff9d00;
+  }
+  
+  .nav-menu a:hover::after {
+    width: 100%;
+  }
+  
+  /* === INQUIRY BOX === */
+  .inquiry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: black;
+    font-size: 0.9rem;
+  }
+  
+  .phone-icon {
+    font-size: 22px;
+    color: #ff6600;
+  }
+  
+  /* === MOBILE MENU TOGGLE === */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* === SLIDE DOWN ANIMATION === */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* === RESPONSIVE STYLES === */
+  @media (max-width: 1024px) {
+    .nav-menu {
+      position: fixed;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
+      gap: 12px;
+      display: none;
+      animation: slideDown 0.3s ease-in-out forwards;
+      z-index: 998;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-menu a {
+      width: 90%;
+      font-size: 1.05rem;
+      background: #f8f8ff;
+      color: #3e3e3e;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 6px 0;
+    }
+  
+    .nav-menu a:hover {
+      background: #ebebff;
+      color: #3e35e0;
+    }
+  
+    .inquiry {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .logo {
+      width: 110px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-menu a {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .logo {
+      width: 95px;
+    }
+  }
+  
