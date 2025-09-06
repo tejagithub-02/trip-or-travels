@@ -21,12 +21,12 @@ const Footer = () => {
           <div className="footer-links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">About Us</a></li>
+              <li><a href="/about">About Us</a></li>
               <li><a href="#">Destinations</a></li>
               <li><a href="#">Tour Packages</a></li>
               <li><a href="#">Travel Blog</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </div>

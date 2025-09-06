@@ -26,19 +26,20 @@ const Navbar = () => {
 
   return (
     <header className="header">
+    <div className="header-container">
       <div className="logo-section">
         <img src={logo} alt="Trip or Travel" className="logo" />
       </div>
-
+  
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
-      <Link to="/">HOME</Link>
-      <Link to="/about">ABOUT</Link>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
         <Link to="#packages">PACKAGES +</Link>
         <Link to="/gallery">GALLERY</Link>
-        <Link to="#contact">CONTACT US</Link>
+        <Link to="/contact">CONTACT US</Link>
         <Link to="#login">LOGIN</Link>
       </nav>
-
+  
       <div className="inquiry">
         <FiPhoneCall className="phone-icon" />
         <div className="inquiry-text">
@@ -46,11 +47,13 @@ const Navbar = () => {
           <strong>+91 6363298478</strong>
         </div>
       </div>
-
+  
       <div className="menu-toggle" onClick={toggleMenu}>
         {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </div>
-    </header>
+    </div>
+  </header>
+  
   );
 };
 
