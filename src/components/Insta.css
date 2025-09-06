@@ -44,9 +44,10 @@
   
 /* Autoscroll only on small screens */
 @media (max-width: 767px) {
-    .instagram-gallery {
-      animation: scrollGallery 20s linear infinite;
-    }
+  .instagram-gallery {
+    animation: none !important; /* disables auto-scrolling */
+    transform: none !important; /* prevents shifting */
+  }
   
     @keyframes scrollGallery {
       0% {
