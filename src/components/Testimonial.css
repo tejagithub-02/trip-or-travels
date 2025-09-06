@@ -300,3 +300,25 @@
       margin-top: 20px;
     }
     }
+    @media (max-width: 390px) {
+      .testimonial-meta {
+        position: relative; /* give stars a relative parent */
+      }
+    
+      .stars {
+        position: relative !important; /* override absolute */
+        bottom: auto !important;       /* cancel bottom: 250px */
+        left: auto !important;         /* cancel left: 350px */
+        transform: translate(100%, -330px); /* move slightly right & up */
+        margin: 0;
+      }
+    
+      .rating-text {
+        margin-left: 6px;
+        font-size: 0.85rem;
+      }
+    }
+    
+    
+    
+    
