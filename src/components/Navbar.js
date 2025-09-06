@@ -32,13 +32,14 @@ const Navbar = () => {
       </div>
   
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
-        <Link to="/">HOME</Link>
-        <Link to="/about">ABOUT</Link>
-        <Link to="#packages">PACKAGES +</Link>
-        <Link to="/gallery">GALLERY</Link>
-        <Link to="/contact">CONTACT US</Link>
-        <Link to="#login">LOGIN</Link>
-      </nav>
+  <Link to="/" onClick={() => setIsOpen(false)}>HOME</Link>
+  <Link to="/about" onClick={() => setIsOpen(false)}>ABOUT</Link>
+  <Link to="#packages" onClick={() => setIsOpen(false)}>PACKAGES +</Link>
+  <Link to="/gallery" onClick={() => setIsOpen(false)}>GALLERY</Link>
+  <Link to="/contact" onClick={() => setIsOpen(false)}>CONTACT US</Link>
+  <Link to="#login" onClick={() => setIsOpen(false)}>LOGIN</Link>
+</nav>
+
   
       <div className="inquiry">
         <FiPhoneCall className="phone-icon" />
