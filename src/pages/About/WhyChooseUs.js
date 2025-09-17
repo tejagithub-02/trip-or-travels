@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
     <section className="why-section">
       <div className="container">
         <p className="subtitle" data-aos="fade-down">Our Promise</p>
-        <h2 className="title" data-aos="fade-up">Why Choose Us?</h2>
+        <h2 className="title" data-aos="fade-up">Why Choose Globetrekker?</h2>
 
         <div className="features-grid">
           {features.map((feature, index) => (
