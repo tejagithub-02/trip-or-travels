@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
 import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
@@ -21,12 +22,12 @@ const Footer = () => {
           <div className="footer-links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="#">Destinations</a></li>
-              <li><a href="#">Tour Packages</a></li>
-              <li><a href="#">Travel Blog</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/destinations">Destinations</Link></li>
+              <li><Link to="/tour-packages">Tour Packages</Link></li>
+              <li><Link to="/blog">Travel Blog</Link></li>
+              <li><Link to="/privacy">Privacy Policy</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
         </div>

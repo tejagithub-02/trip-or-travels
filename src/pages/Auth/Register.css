@@ -1,0 +1,118 @@
+/* Wrapper */
+.register-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00b4d8, #90e0ef);
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card */
+  .register-card {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Title */
+  .register-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0077b6;
+    font-weight: 700;
+  }
+  .register-title .highlight {
+    color: #00b4d8;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #0077b6;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Inputs */
+  .input-field {
+    padding: 0.75rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .input-field:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 10px #00b4d8;
+  }
+  
+  /* Radio Group */
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+  }
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .radio-label.active {
+    background: #00b4d8;
+    color: #fff;
+    border-color: #0077b6;
+  }
+  
+  /* Button */
+  .register-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button hover handled by framer-motion */
+  
+  /* Link */
+  .login-link {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #0077b6;
+  }
+  .login-link a {
+    color: #00b4d8;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .login-link a:hover {
+    color: #0077b6;
+    text-decoration: underline;
+  }
+  
