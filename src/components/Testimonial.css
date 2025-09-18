@@ -261,9 +261,7 @@
     .testimonial-meta {
       text-align: left;
       width: 100%;
-    }
-    
-    
+    }   
   }
   @media (max-width: 900px) {
     .testimonial-footer {
@@ -304,8 +302,6 @@
       .testimonial-meta {
         position: relative; /* give stars a relative parent */
       }
-    
-
     }
        
     
