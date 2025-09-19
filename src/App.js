@@ -12,7 +12,6 @@
 // import Login from "./pages/Auth/Login";
 // import Register from "./pages/Auth/Register";
 // import Privacy from "./pages/Privacy/Privacy";
-
 // function AppWrapper() {
 //   const location = useLocation();
 //   const [loading, setLoading] = useState(true);
